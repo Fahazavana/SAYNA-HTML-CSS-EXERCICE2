@@ -1,3 +1,62 @@
 @import "variables";
 @import "reset";
+@import "breakpoint_grid";
 
+/********************** header **********************/
+
+
+
+header {
+  background-image: url("../img/header_bg.jpg");
+  .separator {
+    background-color: $color-dark-gray;
+    height: 0.1vw;
+  }
+}
+
+.nav-bar{
+  #navLogo {
+    width: 45%;
+    margin:auto;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+
+
+#ordinateur-top{
+  width: 50%;
+  margin: auto;
+  min-width: 342px;
+  min-height: 245px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/ordinateur.png");
+}
+
+@media screen and (max-width:768px) {
+  .notInMob{
+    display: none;
+  }
+}
+
+@media screen and (min-width:769px) {
+
+
+
+  /**************** header ****************/
+  .nav-bar{
+    display: flex;
+    justify-content: space-between;
+  }
+  #ordinateur-top{
+    width: 50%;
+    margin: auto;
+    min-width: 600px;
+    min-height: 314px;
+    background-image: url("../img/image_600px_1.png");
+  }  
+}
