@@ -5,6 +5,14 @@
   // border: 1px solid green;
 }
 
+.row{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 @media screen and (min-width: 577px) {
   .container {
     margin: auto;
@@ -13,6 +21,14 @@
 }
 
 @media screen and (min-width: 769px) {
+  /*************** Colonne ******************/
+  .row{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .col-4{
+    width: calc(95% / 3);
+  }
   .container {
     margin: auto;
     width: 720px;

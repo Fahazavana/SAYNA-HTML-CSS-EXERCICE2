@@ -14,6 +14,13 @@ body {
   padding-bottom: 2%;
 }
 
+.row {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media screen and (min-width: 577px) {
   .container {
     margin: auto;
@@ -21,6 +28,16 @@ body {
   }
 }
 @media screen and (min-width: 769px) {
+  /*************** Colonne ******************/
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .col-4 {
+    width: 31.6666666667%;
+  }
+
   .container {
     margin: auto;
     width: 720px;
@@ -80,12 +97,38 @@ nav > ul.nav-icons img {
   display: block;
 }
 
+/********************** Section avec la carte **********************************/
+.map {
+  background-size: 100%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-image: url("../img/map_bg.png");
+}
+
+.icone-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icone-title + p {
+  text-align: center;
+}
+
+.iphone #phone {
+  display: block;
+  margin: auto;
+}
+
 @media screen and (max-width: 768px) {
   .notInMob {
     display: none !important;
   }
 }
 @media screen and (min-width: 769px) {
+  .notInWeb {
+    display: none !important;
+  }
+
   /**************** header ****************/
   .nav-bar {
     display: flex;
@@ -98,6 +141,41 @@ nav > ul.nav-icons img {
     min-width: 600px;
     min-height: 314px;
     background-image: url("../img/image_600px_1.png");
+  }
+
+  .map {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../img/map_bg.png");
+  }
+
+  .left .icone-title {
+    justify-content: flex-start;
+  }
+  .left .icone-title + p {
+    text-align: left;
+  }
+
+  .iphone {
+    min-height: 341px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("../img/image_190px_1.png");
+  }
+
+  #play {
+    top: 50%;
+    margin: auto;
+    display: block;
+    position: relative;
+  }
+
+  .right .icone-title {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  .right .icone-title + p {
+    text-align: right;
   }
 }
 
