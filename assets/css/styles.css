@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -34,8 +35,16 @@ body {
     justify-content: space-between;
   }
 
+  .col-2 {
+    width: 15.8333333333%;
+  }
+
   .col-4 {
     width: 31.6666666667%;
+  }
+
+  .col-5 {
+    width: 39.5833333333%;
   }
 
   .col-6 {
@@ -97,12 +106,19 @@ nav > ul.nav-icons {
   padding: 0;
   width: 100%;
   display: flex;
+  list-style-type: none;
   justify-content: space-around;
 }
 nav > ul.nav-icons li,
 nav > ul.nav-icons a,
 nav > ul.nav-icons img {
   display: block;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 /********************** Section avec la carte **********************************/
@@ -150,6 +166,12 @@ figure img {
 }
 figure figcaption {
   text-align: center;
+}
+
+/*********************** Footer *******************************/
+.logoFooter img {
+  display: block;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {

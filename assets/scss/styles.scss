@@ -3,199 +3,219 @@
 @import "breakpoint_grid";
 
 /*************************** background ************/
+
 .bg-light-gray {
-  background-color: $color-light-gray;
+    background-color: $color-light-gray;
 }
 
 .bg-separator {
-  background-image: url("../img/separator2.jpg");
+    background-image: url("../img/separator2.jpg");
 }
 
+
 /******************* text color *******************/
+
 
 /********************** header **********************/
 
 header {
-  background-image: url("../img/header_bg.jpg");
-  .separator {
-    background-color: $color-dark-gray;
-    height: 0.15vw;
-  }
+    background-image: url("../img/header_bg.jpg");
+    .separator {
+        background-color: $color-dark-gray;
+        height: 0.15vw;
+    }
 }
 
 .nav-bar {
-  #navLogo {
-    width: 45%;
-    margin: auto;
-    img {
-      width: 100%;
-      display: block;
+    #navLogo {
+        width: 45%;
+        margin: auto;
+        img {
+            width: 100%;
+            display: block;
+        }
     }
-  }
 }
 
 #ordinateur-top {
-  width: 50%;
-  margin: auto;
-  min-width: 342px;
-  min-height: 245px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/ordinateur.png");
+    width: 50%;
+    margin: auto;
+    min-width: 342px;
+    min-height: 245px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/ordinateur.png");
 }
 
+
 /******************** navigation with icons ***************************/
+
 nav {
-  > ul.nav-icons {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    li,
-    a,
-    img {
-      display: block;
+    >ul.nav-icons {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        li,
+        a,
+        img {
+            display: block;
+        }
     }
-  }
 }
+
+nav {
+    >ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
 
 /********************** Section avec la carte **********************************/
 
 .map {
-  background-size: 100%;
-  background-position: 0 50%;
-  background-repeat: no-repeat;
-  background-image: url("../img/map_bg.png");
+    background-size: 100%;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/map_bg.png");
 }
 
 .icone-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  + p {
-    text-align: center;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    +p {
+        text-align: center;
+    }
 }
 
 .iphone {
-  #phone {
-    display: block;
-    margin: auto;
-  }
+    #phone {
+        display: block;
+        margin: auto;
+    }
 }
+
+
 /*******************Avatar et capture d'ecran ****************************/
 
 .avatar {
-  width: 15%;
-  margin: auto;
-  min-width: 91px;
-  img {
-    width: 100%;
-    filter: brightness(100);
-  }
-}
-figure {
-  margin-right: 0;
-  margin-left: 0;
-  img {
-    width: 50%;
+    width: 15%;
     margin: auto;
-    display: block;
-    min-width: 185px;
-  }
-  figcaption {
-    text-align: center;
-  }
+    min-width: 91px;
+    img {
+        width: 100%;
+        filter: brightness(100);
+    }
 }
+
+figure {
+    margin-right: 0;
+    margin-left: 0;
+    img {
+        width: 50%;
+        margin: auto;
+        display: block;
+        min-width: 185px;
+    }
+    figcaption {
+        text-align: center;
+    }
+}
+
+
+/*********************** Footer *******************************/
+
+.logoFooter {
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
-  .notInMob {
-    display: none !important;
-  }
+    .notInMob {
+        display: none !important;
+    }
 }
 
 @media screen and (min-width: 769px) {
-  .notInWeb {
-    display: none !important;
-  }
-
-  /**************** header ****************/
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-  }
-  #ordinateur-top {
-    width: 50%;
-    margin: auto;
-    min-width: 600px;
-    min-height: 314px;
-    background-image: url("../img/image_600px_1.png");
-  }
-  .map {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image: url("../img/map_bg.png");
-  }
-  .left .icone-title {
-    justify-content: flex-start;
-    + p {
-      text-align: left;
+    .notInWeb {
+        display: none !important;
     }
-  }
-  .iphone {
-    min-height: 341px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: url("../img/image_190px_1.png");
-  }
-
-  #play {
-    top: 50%;
-    margin: auto;
-    display: block;
-    position: relative;
-  }
-  .right {
-    .icone-title {
-      justify-content: flex-start;
-      flex-direction: row-reverse;
-
-      + p {
-        text-align: right;
-      }
+    /**************** header ****************/
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
     }
-  }
-
-  /*******************Avatar et capture d'ecran ****************************/
-  .avatar {
-    img {
-      filter: brightness(1);
+    #ordinateur-top {
+        width: 50%;
+        margin: auto;
+        min-width: 600px;
+        min-height: 314px;
+        background-image: url("../img/image_600px_1.png");
     }
-  }
-
-  figure {
-    img {
-      width: 90%;
-      display: block;
-      min-width: 185px;
+    .map {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url("../img/map_bg.png");
     }
-    figcaption {
-      text-align: left;
+    .left .icone-title {
+        justify-content: flex-start;
+        +p {
+            text-align: left;
+        }
     }
-  }
-
-
-  #ordinateur2{
-    background-image:url("../img/dzdzd.png");
-    background-repeat: no-repeat;
-    min-width: 307px;
-    min-height: 295px;
-
-  #play2 {
-    top: 40%;
-    display: block;
-    position: relative;
-  }
-
-  }
+    .iphone {
+        min-height: 341px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-image: url("../img/image_190px_1.png");
+    }
+    #play {
+        top: 50%;
+        margin: auto;
+        display: block;
+        position: relative;
+    }
+    .right {
+        .icone-title {
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+            +p {
+                text-align: right;
+            }
+        }
+    }
+    /*******************Avatar et capture d'ecran ****************************/
+    .avatar {
+        img {
+            filter: brightness(1);
+        }
+    }
+    figure {
+        img {
+            width: 90%;
+            display: block;
+            min-width: 185px;
+        }
+        figcaption {
+            text-align: left;
+        }
+    }
+    #ordinateur2 {
+        background-image: url("../img/dzdzd.png");
+        background-repeat: no-repeat;
+        min-width: 307px;
+        min-height: 295px;
+        #play2 {
+            top: 40%;
+            display: block;
+            position: relative;
+        }
+    }
 }
