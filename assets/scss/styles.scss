@@ -7,6 +7,10 @@
   background-color: $color-light-gray;
 }
 
+.bg-separator {
+  background-image: url("../img/separator2.jpg");
+}
+
 /******************* text color *******************/
 
 /********************** header **********************/
@@ -74,13 +78,36 @@ nav {
   }
 }
 
-.iphone{
-  #phone{
+.iphone {
+  #phone {
     display: block;
     margin: auto;
   }
 }
+/*******************Avatar et capture d'ecran ****************************/
 
+.avatar {
+  width: 15%;
+  margin: auto;
+  min-width: 91px;
+  img {
+    width: 100%;
+    filter: brightness(100);
+  }
+}
+figure {
+  margin-right: 0;
+  margin-left: 0;
+  img {
+    width: 50%;
+    margin: auto;
+    display: block;
+    min-width: 185px;
+  }
+  figcaption {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .notInMob {
     display: none !important;
@@ -127,7 +154,6 @@ nav {
     margin: auto;
     display: block;
     position: relative;
-    
   }
   .right {
     .icone-title {
@@ -137,6 +163,24 @@ nav {
       + p {
         text-align: right;
       }
+    }
+  }
+
+  /*******************Avatar et capture d'ecran ****************************/
+  .avatar {
+    img {
+      filter: brightness(1);
+    }
+  }
+
+  figure {
+    img {
+      width: 90%;
+      display: block;
+      min-width: 185px;
+    }
+    figcaption {
+      text-align: left;
     }
   }
 }
