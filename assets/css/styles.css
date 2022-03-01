@@ -38,6 +38,10 @@ body {
     width: 31.6666666667%;
   }
 
+  .col-6 {
+    width: 47.5%;
+  }
+
   .container {
     margin: auto;
     width: 720px;
@@ -219,6 +223,18 @@ figure figcaption {
   }
   figure figcaption {
     text-align: left;
+  }
+
+  #ordinateur2 {
+    background-image: url("../img/dzdzd.png");
+    background-repeat: no-repeat;
+    min-width: 307px;
+    min-height: 295px;
+  }
+  #ordinateur2 #play2 {
+    top: 40%;
+    display: block;
+    position: relative;
   }
 }
 
