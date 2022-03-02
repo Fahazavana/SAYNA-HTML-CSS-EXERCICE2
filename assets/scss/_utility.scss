@@ -1,0 +1,145 @@
+.container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    //border: 1px solid green;
+}
+
+.row,
+.row-column {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 577px) {
+    .row {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /*************** Colonne ******************/
+    .row-column {
+        width: 720px;
+    }
+    .row {
+        width: 720px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .col-2 {
+        width: calc(95% / 6);
+    }
+    .col-4 {
+        width: calc(95% / 3);
+    }
+    .col-5 {
+        width: calc((5*95%)/12);
+    }
+    .col-6 {
+        width: calc(95% / 2);
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .row,
+    .row-column {
+        width: 960px;
+    }
+}
+
+
+/*************************** background ************/
+
+.bg-light-gray {
+    background-color: $color-light-gray;
+}
+
+.bg-separator {
+    background-image: url("../img/separator2.jpg");
+}
+
+
+/******************* text color *******************/
+
+.text-dark-gray {
+    color: $color-dark-gray;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: $color-white;
+}
+
+.text-dark-white {
+    color: $color-dark-white
+}
+
+.text-green {
+    color: $color-green;
+}
+
+
+/********************** Font Style *******************/
+
+.font1 {
+    font-family: $font-family-1;
+}
+
+.font2 {
+    font-family: $font-family-2;
+}
+
+.font3 {
+    font-family: $font-family-3;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+
+/********************* text align *******************/
+
+.text-center {
+    text-align: center;
+}
+
+
+/************************ display, margin, padding ********************/
+
+.d-block {
+    display: block;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.w-50p {
+    width: 50%;
+}
+
+.w-25p {
+    width: 25%;
+}
